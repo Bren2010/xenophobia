@@ -1,14 +1,9 @@
 package main
 
 import (
-	"gitlab.com/tymorl/xenophobia/pkg/add"
-	"gitlab.com/tymorl/xenophobia/pkg/been"
+	"github.com/Bren2010/xenophobia/pkg/demo"
 )
 
-func Been() error {
-	return been.Xenophobic()
-}
-
-func Add() {
-	add.Xenophobic()
+func Demo() {
+	demo.Xenophobic()
 }
