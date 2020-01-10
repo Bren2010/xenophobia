@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"gitlab.com/tymorl/xenophobia/pkg/add"
 	"gitlab.com/tymorl/xenophobia/pkg/been"
 )
 
@@ -11,4 +12,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	add.Xenophobic()
 }

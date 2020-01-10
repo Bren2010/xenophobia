@@ -10,16 +10,25 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	x, err := p.Lookup("Xeno")
+	b, err := p.Lookup("Been")
 	if err != nil {
 		fmt.Println(err)
 	}
-	xeno, ok := x.(func() error)
+	been, ok := b.(func() error)
 	if !ok {
 		fmt.Println("Whoops!")
 	}
-	err = xeno()
+	err = been()
 	if err != nil {
 		fmt.Println(err)
 	}
+	a, err := p.Lookup("Add")
+	if err != nil {
+		fmt.Println(err)
+	}
+	add, ok := a.(func())
+	if !ok {
+		fmt.Println("Whoops!")
+	}
+	add()
 }
